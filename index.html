@@ -1,165 +1,211 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Asraj Sardar | Engineering & Intelligence</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#080a0e;--text:#f4f4f1;--muted:#989ba6;--accent:#b6ff65}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;overflow-x:hidden}
-a{color:inherit;text-decoration:none}
-::selection{background:var(--accent);color:#080a0e}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(#ffffff07 1px,transparent 1px),linear-gradient(90deg,#ffffff07 1px,transparent 1px);background-size:65px 65px;mask-image:linear-gradient(to bottom,#0008,transparent);z-index:-1}
-.glow{position:fixed;width:480px;height:480px;background:radial-gradient(circle,#a0ff461c,transparent 65%);left:var(--mx,50%);top:var(--my,30%);transform:translate(-50%,-50%);pointer-events:none;z-index:-1}
-nav{max-width:1240px;margin:auto;padding:32px 6%;display:flex;justify-content:space-between;align-items:center}
-.logo{font-family:'Space Grotesk';font-size:22px;font-weight:700;letter-spacing:-1px}
-.logo span{color:var(--accent)}
-.navlinks{display:flex;gap:32px;font-size:13px;color:#c3c5c9}
-.navlinks a:hover{color:var(--accent)}
-.hero{max-width:1240px;min-height:84vh;margin:auto;padding:115px 6% 90px;display:flex;flex-direction:column;justify-content:center}
-.eyebrow{color:var(--accent);font-size:12px;letter-spacing:4px;text-transform:uppercase;margin-bottom:30px}
-h1{font-family:'Space Grotesk';font-size:clamp(65px,10.5vw,152px);letter-spacing:-.09em;line-height:.92;margin:0;font-weight:600}
-h1 em{font-style:normal;color:var(--accent)}
-.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-top:48px}
-.hero-desc{max-width:485px;font-size:17px;line-height:1.8;color:var(--muted)}
-.cta{display:inline-flex;gap:18px;align-items:center;border:1px solid #59604b;padding:17px 23px;font-size:13px;transition:.3s;white-space:nowrap}
-.cta:hover{background:var(--accent);color:#080a0e;transform:translateY(-4px)}
-.line{height:1px;background:#ffffff25}
-.strip{padding:24px 6%;display:flex;justify-content:center;gap:50px;flex-wrap:wrap;color:#9b9da3;font-size:12px;letter-spacing:2px;text-transform:uppercase}
-section{max-width:1240px;margin:auto;padding:110px 6%}
-.section-label{font-size:12px;color:var(--accent);letter-spacing:3px;text-transform:uppercase}
-h2{font-family:'Space Grotesk';font-size:clamp(40px,6vw,78px);line-height:1.05;letter-spacing:-.06em;margin:20px 0 50px}
-.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.project{min-height:370px;border:1px solid #ffffff19;background:linear-gradient(145deg,#171b20,#0e1015);padding:30px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:transform .4s,border-color .4s}
-.project:hover{transform:translateY(-8px);border-color:#b6ff6580}
-.project:after{content:"";position:absolute;width:230px;height:230px;right:-70px;top:-70px;border:1px solid #b6ff6540;border-radius:50%;box-shadow:0 0 0 35px #b6ff6507,0 0 0 85px #b6ff6505;transition:.5s}
-.project:hover:after{transform:scale(1.3)}
-.project .number{color:var(--accent);font-size:13px}
-.project h3{font-family:'Space Grotesk';font-size:clamp(27px,3vw,42px);letter-spacing:-.05em;max-width:350px;margin:0 0 14px}
-.project p{color:var(--muted);line-height:1.7;font-size:14px;max-width:380px}
-.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
-.tags span{border:1px solid #ffffff25;padding:7px 10px;font-size:11px;color:#c7c9ce}
-.project.featured{grid-column:span 2;min-height:390px;background:radial-gradient(circle at 85% 40%,#b6ff6520,transparent 40%),#151a1b}
-.about{max-width:780px;color:#a7aab2;font-size:clamp(20px,3vw,30px);line-height:1.6;letter-spacing:-.025em}
-.about strong{color:white}
-footer{border-top:1px solid #ffffff20;padding:35px 6%;display:flex;justify-content:space-between;gap:20px;color:#8a8d94;font-size:12px}
-.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s,transform .8s}
-.reveal.show{opacity:1;transform:translateY(0)}
-@media(max-width:700px){
-nav{padding:25px 6%}.navlinks{gap:15px;font-size:12px}
-.hero{min-height:76vh;padding-top:75px}
-.hero-bottom{align-items:start;flex-direction:column}
-.projects{grid-template-columns:1fr}
-.project.featured{grid-column:span 1}
-.strip{gap:18px;font-size:10px}
-section{padding:75px 6%}
-footer{flex-direction:column}
-}
-@media(prefers-reduced-motion:reduce){
-html{scroll-behavior:auto}
-.reveal{opacity:1;transform:none;transition:none}
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08090c" />
+  <meta name="description" content="Asraj Sardar — Industrial engineering, supply chain, data intelligence and optimization projects." />
+  <title>Asraj Sardar — Beyond the Blueprint</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Mono:wght@400;500&family=Italiana&display=swap" rel="stylesheet" />
+  <style>
+    :root{color-scheme:dark;--bg:#08090c;--bg2:#101217;--panel:#13151a;--ink:#f0efeb;--muted:#989ca4;--line:#292b31;--accent:#b7d7ef;--pad:clamp(22px,5.6vw,102px);--font:'DM Sans',Arial,sans-serif;--mono:'DM Mono',monospace}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    ::selection{background:#b7d7ef;color:#090b0e}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+    .page-grain{pointer-events:none;position:fixed;inset:0;opacity:.13;z-index:99;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E")}
+    .site-header{position:absolute;z-index:25;top:0;left:0;width:100%;height:92px;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.11)}
+    .brand{font-size:21px;letter-spacing:-1.5px;font-weight:650;line-height:1}.brand sup{font:10px var(--mono);letter-spacing:0;margin-left:4px;position:relative;top:-5px;color:var(--accent)}
+    .nav{display:flex;align-items:center;gap:clamp(16px,3vw,43px)}.nav a{font:11px var(--mono);letter-spacing:.12em;color:#c6c9ce;transition:color .2s}.nav a:hover{color:white}.nav a:last-child{border:1px solid #52545c;padding:12px 15px;color:var(--ink)}
+    .hero{min-height:min(900px,100svh);min-height:max(760px,100svh);position:relative;isolation:isolate;overflow:hidden;border-bottom:1px solid var(--line)}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 58% 60% at 72% 51%,#232e3b50,transparent 68%),radial-gradient(ellipse 54% 45% at 85% 85%,#0f1b28,transparent 70%);z-index:-2}
+    .hero-grid{position:absolute;inset:0;opacity:.2;z-index:-1;background-image:linear-gradient(90deg,#777e8b2a 1px,transparent 1px),linear-gradient(#777e8b2a 1px,transparent 1px);background-size:120px 120px;mask-image:linear-gradient(90deg,transparent,#000 70%)}
+    .hero-content{padding:clamp(205px,24svh,270px) var(--pad) 180px;position:relative;z-index:5;max-width:1900px;margin:0 auto;pointer-events:none}
+    .eyebrow{display:flex;align-items:center;gap:13px;font:11px var(--mono);letter-spacing:.2em;color:var(--accent);text-transform:uppercase}
+    .eyebrow::before{content:'';height:6px;width:6px;background:var(--accent);border-radius:50%;box-shadow:0 0 14px #b7d7efa5}
+    .hero-title{margin:30px 0 0;max-width:950px;font-size:clamp(76px,10.2vw,192px);font-weight:500;line-height:.83;letter-spacing:-.098em;text-transform:uppercase}
+    .hero-title .outline{color:transparent;-webkit-text-stroke:1px #e5e6e9;display:block}
+    .hero-title .italic{font-family:'Italiana',Georgia,serif;letter-spacing:-.054em;text-transform:none;font-weight:400;white-space:nowrap;color:#d5d4d0;display:block;transform:translateX(1.8vw)}
+    .hero-lower{display:flex;align-items:end;justify-content:space-between;gap:24px;max-width:780px;margin-top:48px}
+    .hero-description{color:#b4b7bd;font-size:clamp(14px,1.26vw,17px);line-height:1.8;max-width:395px;margin:0}
+    .text-link{pointer-events:auto;align-items:center;display:inline-flex;gap:24px;padding:0 0 9px;border-bottom:1px solid #aeb4bc;font:11px var(--mono);letter-spacing:.1em;white-space:nowrap;transition:gap .2s,color .2s}.text-link:hover{gap:32px;color:var(--accent)}
+    .hero-3d{position:absolute;z-index:2;right:-5%;top:10%;width:min(65vw,1050px);height:85%;pointer-events:none}
+    #sculpture{width:100%;height:100%;display:block;filter:drop-shadow(0 0 55px #6b93bd16)}
+    .sculpture-fallback{position:absolute;inset:19% 16%;border-radius:50%;background:radial-gradient(circle at 33% 28%,#fbfdff 0%,#8296aa 15%,#171e27 35%,#b7c3d0 49%,#2c333e 70%,#070b0f 100%);filter:blur(1px) drop-shadow(0 0 60px #6589b130);transform:rotate(-30deg) scale(.73);opacity:.68}
+    .orb-ring{position:absolute;inset:24% 17%;border:1px solid #a9b7c852;border-radius:50%;transform:rotate(-25deg) scaleX(.65) scaleY(1.28);pointer-events:none;animation:ring 18s linear infinite}
+    @keyframes ring{to{transform:rotate(335deg) scaleX(.65) scaleY(1.28)}}
+    .hero-side{position:absolute;z-index:6;right:var(--pad);top:49%;writing-mode:vertical-rl;color:#a3a8b1;font:10px var(--mono);letter-spacing:.17em}
+    .hero-base{position:absolute;z-index:10;left:var(--pad);right:var(--pad);bottom:35px;display:flex;justify-content:space-between;align-items:end;color:#8b909b;font:10px var(--mono);letter-spacing:.1em}
+    .scroll-indicator{display:flex;align-items:center;gap:13px}.scroll-indicator span{display:inline-block;height:1px;width:65px;background:#747a84}
+    .section{padding:clamp(95px,11vw,175px) var(--pad);max-width:1900px;margin:0 auto}
+    .overline{font:11px var(--mono);letter-spacing:.13em;color:var(--accent);text-transform:uppercase}
+    .section-heading{margin:23px 0 55px;font-weight:450;letter-spacing:-.074em;line-height:1;font-size:clamp(58px,8.5vw,144px)}
+    .section-heading em{font:normal 1.02em 'Italiana',Georgia,serif;color:#aeb6c2;letter-spacing:-.04em}
+    .intro-grid{display:grid;grid-template-columns:1fr .48fr;gap:40px;align-items:end;margin-bottom:58px}.intro-grid p{margin:0 0 10px;color:var(--muted);max-width:340px;line-height:1.8;font-size:14px}
+    .works{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .work-card{position:relative;min-height:clamp(430px,41vw,570px);overflow:hidden;border:1px solid #2d3037;background:#111318;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(24px,3vw,42px);text-align:left;color:var(--ink);cursor:pointer;transition:background .4s,border-color .3s,transform .4s}
+    .work-card:first-child{grid-column:1 / -1;min-height:clamp(470px,48vw,670px)}
+    .work-card:hover{border-color:#7a8a9d;transform:translateY(-5px);background:#141820}
+    .work-card:focus-visible{outline-offset:3px}
+    .card-top,.card-bottom{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:start;gap:20px}
+    .card-number{color:#c3c6ce;font:11px var(--mono)}.card-state{color:#c8d0d9;border:1px solid #464c57;padding:9px 11px;text-transform:uppercase;font:10px var(--mono);letter-spacing:.07em}
+    .card-title{font-size:clamp(38px,5vw,75px);letter-spacing:-.069em;font-weight:500;line-height:1.02;max-width:640px;margin:0 0 18px}.work-card:not(:first-child) .card-title{font-size:clamp(32px,3.7vw,56px)}
+    .card-sub{color:#a5aab4;font-size:13px;line-height:1.7;max-width:440px;margin:0}.card-arrow{width:53px;height:53px;flex-shrink:0;border:1px solid #5a616b;border-radius:50%;display:grid;place-items:center;font-size:24px;transition:background .3s,color .3s,transform .3s}.work-card:hover .card-arrow{background:#e7e6e1;color:#0a0c11;transform:rotate(45deg)}
+    .graphic{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+    .graphic::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#111318 3%,transparent 67%),linear-gradient(90deg,#11131888,transparent 67%)}
+    .grid-graphic{background:radial-gradient(ellipse 65% 50% at 76% 42%,#7da2c62c,transparent 74%),linear-gradient(115deg,#15181e,#0e1218)}
+    .grid-graphic::before{content:'';position:absolute;width:66%;aspect-ratio:1;right:5%;top:4%;border-radius:50%;border:1px solid #c2d6e64d;box-shadow:0 0 0 30px #b5d7ef07,0 0 0 90px #b5d7ef0a,0 0 0 158px #b5d7ef05;transform:rotate(-26deg) scaleX(1.4) scaleY(.7);animation:orbit 14s ease-in-out infinite alternate}
+    .chart-lines{position:absolute;right:5%;top:16%;height:54%;width:63%;overflow:visible;opacity:.86}
+    .chart-lines path{fill:none;stroke:#a9cde5;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:620;stroke-dashoffset:620;animation:draw 3.8s ease forwards}.chart-lines path:nth-child(2){stroke:#687a90;animation-delay:.55s}.chart-lines .dot{fill:#dae9f2;filter:drop-shadow(0 0 5px #a9cde5)}
+    @keyframes draw{to{stroke-dashoffset:0}}@keyframes orbit{to{transform:rotate(34deg) scaleX(1.4) scaleY(.7)}}
+    .network-graphic{background:radial-gradient(circle at 55% 35%,#263c4a,transparent 55%),#111318}
+    .network-graphic svg{position:absolute;inset:0;width:100%;height:100%;opacity:.8}
+    .network-graphic .link{stroke:#6c91ac;stroke-width:1;stroke-dasharray:3 7}.network-graphic .node{fill:#c2d8e8;filter:drop-shadow(0 0 8px #b7d7ef)}
+    .rings-graphic{background:radial-gradient(circle at 57% 40%,#40495850,transparent 51%),#111318}
+    .rings-graphic::before{content:'';position:absolute;right:-20%;top:-12%;width:95%;aspect-ratio:1;border-radius:50%;border:2px solid #9cb2c5a8;box-shadow:0 0 0 13px #2b343c,0 0 0 14px #7e94a96c,0 0 0 47px #222a32,0 0 0 48px #9ca8b74b,0 0 0 93px #161b21,0 0 0 94px #7e94a934;transform:rotate(-25deg) scaleY(.74);animation:orbit 14s alternate infinite}
+    .section-dark{background:#101217;border-top:1px solid #282b33;border-bottom:1px solid #282b33}
+    .expertise{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:start}.expertise .section-heading{margin-top:21px}.expertise p{line-height:1.85;color:#aeb2bb;max-width:460px;font-size:16px}
+    .capabilities{margin-top:45px;border-top:1px solid #383b42}.capability{display:flex;align-items:center;gap:30px;padding:26px 0;border-bottom:1px solid #383b42}.capability span{font:10px var(--mono);color:#9ba7b5}.capability strong{font-size:clamp(18px,1.8vw,26px);font-weight:450;letter-spacing:-.03em}
+    .about-section{position:relative;min-height:570px;display:flex;flex-direction:column;justify-content:center}.about-copy{font-size:clamp(24px,3.3vw,50px);font-weight:450;line-height:1.33;letter-spacing:-.055em;max-width:1020px;margin:40px 0}.about-copy span{color:#818894}
+    .about-label{color:var(--accent);font:11px var(--mono);letter-spacing:.12em}
+    .contact{border-top:1px solid var(--line);padding:clamp(90px,10vw,160px) var(--pad) 50px;background:radial-gradient(ellipse 70% 60% at 50% 115%,#29405242,transparent 65%),#08090c}
+    .contact-inner{max-width:1700px;margin:auto}.contact h2{font-size:clamp(70px,12vw,190px);letter-spacing:-.09em;line-height:.92;font-weight:450;margin:30px 0 50px}.contact h2 em{font:normal 1em 'Italiana',Georgia,serif;color:#b6bfca;letter-spacing:-.04em}
+    .contact-row{display:flex;justify-content:space-between;gap:25px;align-items:center;margin-bottom:120px}.contact-row p{max-width:420px;color:#a8adb6;line-height:1.8}.contact-row .text-link{font-size:13px}
+    .footer{display:flex;align-items:center;justify-content:space-between;gap:15px;padding-top:24px;border-top:1px solid #32353d;font:10px var(--mono);color:#8a929c;letter-spacing:.08em}
+    .reveal{opacity:0;transform:translateY(25px);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.8,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+    .modal-backdrop{position:fixed;inset:0;background:#050608df;z-index:60;display:grid;place-items:center;padding:22px;opacity:0;pointer-events:none;transition:opacity .25s}.modal-backdrop.open{opacity:1;pointer-events:auto}
+    .modal{width:min(650px,100%);max-height:90svh;overflow-y:auto;border:1px solid #48505b;background:#141820;box-shadow:0 20px 100px #000b;padding:clamp(25px,4vw,50px);transform:translateY(25px);transition:transform .25s;position:relative}.modal-backdrop.open .modal{transform:translateY(0)}
+    .modal-close{position:absolute;right:20px;top:16px;font-size:25px;color:#e1e5ec;border:0;background:transparent;cursor:pointer}.modal h3{font-size:clamp(33px,5vw,57px);letter-spacing:-.065em;line-height:1.1;font-weight:500;margin:35px 0 20px}.modal p{line-height:1.8;color:#aeb6c0}.modal-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}.modal-tags span{border:1px solid #515966;padding:9px 11px;font:10px var(--mono);color:#c5d3df}
+    @media(max-width:1000px){.hero-3d{right:-25%;width:80vw;opacity:.65}.hero-content{padding-top:245px}.hero-title{font-size:clamp(65px,12vw,125px)}.hero-lower{max-width:540px}.intro-grid{grid-template-columns:1fr}.expertise{grid-template-columns:1fr;gap:22px}.about-section{min-height:400px}}
+    @media(max-width:700px){.site-header{height:72px}.brand{font-size:19px}.nav{gap:14px}.nav a{font-size:9px}.nav a:nth-child(2){display:none}.nav a:last-child{padding:10px}.hero{min-height:760px;min-height:100svh}.hero-3d{width:110vw;height:65%;top:3%;right:-36%;opacity:.6}.hero-content{padding-top:clamp(215px,35svh,300px);padding-bottom:140px}.hero-title{font-size:clamp(66px,14vw,102px);letter-spacing:-.095em}.hero-title .italic{transform:none}.hero-lower{margin-top:37px;display:block}.hero-description{max-width:310px;font-size:14px}.hero-lower .text-link{margin-top:26px}.hero-side{display:none}.hero-base{bottom:22px;font-size:9px}.section{padding:90px var(--pad)}.section-heading{font-size:clamp(54px,13vw,85px)}.works{grid-template-columns:1fr}.work-card,.work-card:first-child{grid-column:auto;min-height:460px}.card-title,.work-card:not(:first-child) .card-title{font-size:clamp(37px,9vw,61px)}.card-bottom{align-items:end}.card-arrow{width:43px;height:43px}.grid-graphic::before{width:100%;right:-27%;top:15%}.chart-lines{width:100%;right:-15%;top:10%}.contact-row{align-items:start;flex-direction:column;margin-bottom:75px}.footer{flex-direction:column;align-items:start;gap:14px}.contact h2{font-size:clamp(65px,14vw,105px)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}.chart-lines path{stroke-dashoffset:0}}
+  </style>
 </head>
 <body>
-<div class="glow" id="glow"></div>
+  <div class="page-grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Asraj Sardar — Home">ASRAJ<sup>®</sup></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#contact">CONTACT ↗</a>
+    </nav>
+  </header>
+  <main>
+    <section id="top" class="hero" aria-labelledby="main-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-3d" aria-hidden="true"><div class="sculpture-fallback" id="sculpture-fallback"></div><div class="orb-ring" id="orb-ring"></div><canvas id="sculpture"></canvas></div>
+      <div class="hero-content">
+        <div class="eyebrow reveal">ASRAJ SARDAR / ENGINEERING × INTELLIGENCE</div>
+        <h1 class="hero-title reveal" id="main-title">BEYOND<span class="outline">THE</span><span class="italic">Blueprint.</span></h1>
+        <div class="hero-lower reveal">
+          <p class="hero-description">Industrial engineering meets data intelligence. Exploring smarter ways to design, plan and optimize complex systems.</p>
+          <a class="text-link" href="#work">EXPLORE THE WORK <span>↘</span></a>
+        </div>
+      </div>
+      <div class="hero-side">FORM FOLLOWS INTELLIGENCE / VOL. 001</div>
+      <div class="hero-base"><span>INDEPENDENT PORTFOLIO — 2026</span><span class="scroll-indicator">SCROLL TO DISCOVER <span></span> ↓</span></div>
+    </section>
 
-<nav>
-<a href="#" class="logo">ASRAJ<span>.</span></a>
-<div class="navlinks">
-<a href="#work">WORK</a>
-<a href="#about">ABOUT</a>
-<a href="https://github.com/Asrajsardar" target="_blank" rel="noopener">GITHUB ↗</a>
-</div>
-</nav>
+    <section class="section" id="work" aria-labelledby="work-heading">
+      <div class="overline reveal">01 / SELECTED WORK</div>
+      <div class="intro-grid"><h2 class="section-heading reveal" id="work-heading">Ideas into<br><em>systems.</em></h2><p class="reveal">A growing collection of work in supply chain analytics, optimization and enterprise operations. Select a project to explore its current scope.</p></div>
+      <div class="works">
+        <button type="button" class="work-card reveal" data-project="walmart" aria-label="View Walmart demand planning project details">
+          <div class="graphic grid-graphic" aria-hidden="true"><svg class="chart-lines" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid meet"><path d="M20 260 C95 250 115 180 165 201 S260 235 307 151 S390 198 446 102 S519 110 580 40"/><path d="M20 287 C95 262 123 275 172 238 S262 266 316 216 S407 244 465 154 S536 163 581 109"/><circle class="dot" cx="446" cy="102" r="4"/><circle class="dot" cx="580" cy="40" r="5"/></svg></div>
+          <div class="card-top"><span class="card-number">PROJECT — 001 / ANALYTICS</span><span class="card-state">IN PROGRESS</span></div>
+          <div class="card-bottom"><div><h3 class="card-title">Walmart<br>Demand Planning</h3><p class="card-sub">Forecasting / Inventory / Supply planning<br>Python · Power BI · Data modeling</p></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+        </button>
+        <button type="button" class="work-card reveal" data-project="location" aria-label="View facility location optimization concept details">
+          <div class="graphic network-graphic" aria-hidden="true"><svg viewBox="0 0 450 500" preserveAspectRatio="xMidYMid slice"><path class="link" d="M110 160 240 95 370 195 315 340 155 375 75 300 110 160 315 340 240 95 155 375 370 195 75 300" fill="none"/><circle class="node" cx="110" cy="160" r="5"/><circle class="node" cx="240" cy="95" r="7"/><circle class="node" cx="370" cy="195" r="5"/><circle class="node" cx="315" cy="340" r="7"/><circle class="node" cx="155" cy="375" r="5"/><circle class="node" cx="75" cy="300" r="5"/></svg></div>
+          <div class="card-top"><span class="card-number">PROJECT — 002 / OPTIMIZATION</span><span class="card-state">CONCEPT</span></div>
+          <div class="card-bottom"><div><h3 class="card-title">Facility Location<br>Optimization</h3><p class="card-sub">Network design / Cost trade-offs<br>Linear programming · Excel</p></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+        </button>
+        <button type="button" class="work-card reveal" data-project="sap" aria-label="View SAP procurement workflow project details">
+          <div class="graphic rings-graphic" aria-hidden="true"></div>
+          <div class="card-top"><span class="card-number">PROJECT — 003 / SYSTEMS</span><span class="card-state">PROCESS STUDY</span></div>
+          <div class="card-bottom"><div><h3 class="card-title">SAP Procurement<br>Workflow</h3><p class="card-sub">Procure-to-pay / Materials management<br>SAP MM · ERP process design</p></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+        </button>
+      </div>
+    </section>
 
-<main>
-<header class="hero">
-<div class="eyebrow reveal">ENGINEERING / DATA / INTELLIGENCE</div>
-<h1 class="reveal">THINK.<br>BUILD.<br><em>OPTIMIZE.</em></h1>
-<div class="hero-bottom reveal">
-<p class="hero-desc">I'm Asraj Sardar. I explore the intersection of industrial engineering, supply chain systems, data analytics and intelligent decision-making.</p>
-<a class="cta" href="#work">EXPLORE MY WORK <span>↗</span></a>
-</div>
-</header>
+    <div class="section-dark"><section class="section expertise" id="expertise" aria-labelledby="expertise-heading">
+      <div><div class="overline reveal">02 / WHAT I EXPLORE</div><h2 class="section-heading reveal" id="expertise-heading">Built for<br><em>complexity.</em></h2></div>
+      <div class="reveal"><p>My work combines industrial engineering fundamentals with analytical tools to examine real operational challenges—from forecasting demand to designing efficient processes.</p>
+        <div class="capabilities"><div class="capability"><span>01</span><strong>Supply Chain & Planning</strong></div><div class="capability"><span>02</span><strong>Data & Decision Intelligence</strong></div><div class="capability"><span>03</span><strong>Optimization & Operations</strong></div><div class="capability"><span>04</span><strong>Enterprise Systems</strong></div></div>
+      </div>
+    </section></div>
 
-<div class="line"></div>
-<div class="strip">
-<span>SUPPLY CHAIN</span>
-<span>INDUSTRIAL ENGINEERING</span>
-<span>AI & DATA</span>
-<span>OPTIMIZATION</span>
-</div>
-<div class="line"></div>
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="about-label reveal" id="about-heading">03 / A NOTE FROM ASRAJ</div>
+      <p class="about-copy reveal">I believe the best systems aren't simply efficient. <span>They're thoughtfully designed, measurable, and built to adapt.</span></p>
+      <a class="text-link reveal" href="https://github.com/asrajsardar" target="_blank" rel="noopener noreferrer">EXPLORE MY GITHUB <span>↗</span></a>
+    </section>
 
-<section id="work">
-<div class="section-label reveal">01 / SELECTED WORK</div>
-<h2 class="reveal">Ideas into<br>systems.</h2>
-<div class="projects">
+    <section class="contact" id="contact" aria-labelledby="contact-heading"><div class="contact-inner">
+      <div class="overline reveal">04 / CONNECT</div>
+      <h2 class="reveal" id="contact-heading">LET'S BUILD<br><em>Something.</em></h2>
+      <div class="contact-row reveal"><p>Interested in engineering, analytics or systems thinking? Explore the work and connect through GitHub.</p><a class="text-link" href="https://github.com/asrajsardar" target="_blank" rel="noopener noreferrer">GITHUB PROFILE ↗</a></div>
+      <footer class="footer"><span>© <span id="year">2026</span> ASRAJ SARDAR</span><span>ENGINEERED WITH PURPOSE</span><a href="#top">BACK TO TOP ↑</a></footer>
+    </div></section>
+  </main>
 
-<article class="project featured reveal">
-<div class="number">01 / DATA & FORECASTING</div>
-<div>
-<h3>Walmart Demand Planning</h3>
-<p>Exploring demand forecasting, inventory planning and supply planning through retail sales data and analytical models.</p>
-<div class="tags"><span>PYTHON</span><span>POWER BI</span><span>FORECASTING</span><span>IN PROGRESS</span></div>
-</div>
-</article>
-
-<article class="project reveal">
-<div class="number">02 / OPERATIONS RESEARCH</div>
-<div>
-<h3>Facility Location Optimization</h3>
-<p>An optimization model concept for evaluating facility locations, transportation decisions and cost trade-offs.</p>
-<div class="tags"><span>LINEAR PROGRAMMING</span><span>EXCEL</span><span>MODEL CONCEPT</span></div>
-</div>
-</article>
-
-<article class="project reveal">
-<div class="number">03 / ENTERPRISE SYSTEMS</div>
-<div>
-<h3>SAP Procurement Workflow</h3>
-<p>A process-focused case study of materials management, purchasing workflows and enterprise resource planning.</p>
-<div class="tags"><span>SAP MM</span><span>ERP</span><span>PROCUREMENT</span></div>
-</div>
-</article>
-
-</div>
-</section>
-
-<section id="about">
-<div class="section-label reveal">02 / THE THINKING BEHIND THE WORK</div>
-<h2 class="reveal">Engineering is<br>my language.</h2>
-<p class="about reveal">With a background in <strong>production, industrial engineering and supply chain</strong>, I focus on understanding how complex systems operate — and exploring how <strong>analytics, optimization and technology</strong> can make them better.</p>
-<a class="cta reveal" href="https://github.com/Asrajsardar" target="_blank" rel="noopener">VIEW MY GITHUB ↗</a>
-</section>
-</main>
-
-<footer>
-<span>© <span id="year"></span> ASRAJ SARDAR</span>
-<span>ENGINEERED WITH PURPOSE.</span>
-<span>BUILT TO EVOLVE.</span>
-</footer>
-
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();
-document.addEventListener('pointermove',e=>{
-document.documentElement.style.setProperty('--mx',e.clientX+'px');
-document.documentElement.style.setProperty('--my',e.clientY+'px');
-});
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add('show');
-observer.unobserve(entry.target);
-}
-});
-},{threshold:.1});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-</script>
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close project details">×</button>
+      <div class="overline" id="modal-index"></div>
+      <h3 id="modal-title"></h3><p id="modal-description"></p><p id="modal-note"></p><div class="modal-tags" id="modal-tags"></div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealItems=document.querySelectorAll('.reveal');
+    if(reduceMotion||!('IntersectionObserver' in window)){revealItems.forEach(el=>el.classList.add('visible'));}
+    else{const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}}),{threshold:.075});revealItems.forEach(el=>io.observe(el));}
+    // Replace these starter project descriptions with your finished case studies later.
+    const projects={
+      walmart:{number:'PROJECT 001 / IN PROGRESS',title:'Walmart Demand Planning',description:'An evolving analytics project exploring retail demand forecasting, inventory planning, and supply planning using historical sales data.',note:'A full case study with actual methods, model performance, dashboards and findings can be added when the project is complete.',tags:['Python','Power BI','Forecasting','Inventory planning']},
+      location:{number:'PROJECT 002 / CONCEPT',title:'Facility Location Optimization',description:'A linear programming project concept investigating location selection and transportation cost trade-offs in distribution networks.',note:'The full optimization model, assumptions, constraints and results will be added after they are documented.',tags:['Operations research','Excel','Linear programming','Network design']},
+      sap:{number:'PROJECT 003 / PROCESS STUDY',title:'SAP Procurement Workflow',description:'A process-focused study of requisition-to-purchase-order and materials management workflows within enterprise resource planning.',note:'Detailed process diagrams, transaction examples and project evidence can be included later.',tags:['SAP MM','ERP','Procurement','Process mapping']}
+    };
+    const modal=document.getElementById('project-modal');const closeButton=document.getElementById('modal-close');let lastTrigger=null;
+    document.querySelectorAll('[data-project]').forEach(btn=>btn.addEventListener('click',()=>{const p=projects[btn.dataset.project];if(!p)return;lastTrigger=btn;document.getElementById('modal-index').textContent=p.number;document.getElementById('modal-title').textContent=p.title;document.getElementById('modal-description').textContent=p.description;document.getElementById('modal-note').textContent=p.note;document.getElementById('modal-tags').replaceChildren(...p.tags.map(t=>{const span=document.createElement('span');span.textContent=t;return span;}));modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';closeButton.focus();}));
+    function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';if(lastTrigger)lastTrigger.focus();}
+    closeButton.addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal();if(e.key==='Tab'&&modal.classList.contains('open')){const nodes=[...modal.querySelectorAll('button,a,[tabindex]:not([tabindex="-1"])')];const first=nodes[0],last=nodes[nodes.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
+  </script>
+  <script type="module">
+    // The CSS silver sculpture remains visible if this optional 3D module cannot load.
+    if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      try{
+        const THREE=await import('https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js');
+        const canvas=document.getElementById('sculpture');const parent=canvas.parentElement;
+        const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true,powerPreference:'low-power'});
+        renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.8));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.5;
+        const scene=new THREE.Scene();const camera=new THREE.PerspectiveCamera(34,1,.1,100);camera.position.set(0,0,11);
+        // Custom studio-light environment yields metal reflections without image assets.
+        const room=new THREE.Scene();room.background=new THREE.Color(0x10151d);
+        const panels=[{x:-6,y:1,z:4,w:3,h:10,rx:0,ry:.55,c:0xffffff},{x:6,y:2,z:3,w:3,h:10,rx:0,ry:-.55,c:0xb5d7ff},{x:0,y:7,z:2,w:10,h:3,rx:.6,ry:0,c:0xf1f6ff},{x:1,y:-7,z:2,w:12,h:2,rx:-.45,ry:0,c:0x9eb7d5},{x:-2,y:1,z:-6,w:8,h:9,rx:0,ry:0,c:0x708096}];
+        panels.forEach(v=>{let m=new THREE.Mesh(new THREE.PlaneGeometry(v.w,v.h),new THREE.MeshBasicMaterial({color:v.c,side:THREE.DoubleSide}));m.position.set(v.x,v.y,v.z);m.rotation.set(v.rx,v.ry,0);room.add(m);});
+        const env=new THREE.PMREMGenerator(renderer).fromScene(room,.05);scene.environment=env.texture;
+        const group=new THREE.Group();scene.add(group);
+        const silver=new THREE.MeshPhysicalMaterial({color:0xabb6c5,metalness:1,roughness:.17,envMapIntensity:1.8,clearcoat:1,clearcoatRoughness:.13});
+        const sculpture=new THREE.Mesh(new THREE.TorusKnotGeometry(2.0,.46,300,30,2,3),silver);group.add(sculpture);
+        const accent=new THREE.Mesh(new THREE.TorusGeometry(3.02,.013,8,200),new THREE.MeshBasicMaterial({color:0x8aacc7,transparent:true,opacity:.43}));accent.rotation.set(.5,.28,.55);group.add(accent);
+        const accent2=new THREE.Mesh(new THREE.TorusGeometry(2.63,.009,8,200),new THREE.MeshBasicMaterial({color:0xe9f3ff,transparent:true,opacity:.26}));accent2.rotation.set(-.2,1.05,-.5);group.add(accent2);
+        const points=[];for(let i=0;i<85;i++){const a=i*2.39996,r=3.5+Math.sin(i*12.35)*.65;points.push(r*Math.cos(a),r*Math.sin(a),((i*17)%43)/30- .7)}
+        const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(points,3));const stars=new THREE.Points(geometry,new THREE.PointsMaterial({color:0xd8e6f5,size:.026,transparent:true,opacity:.6}));group.add(stars);
+        scene.add(new THREE.AmbientLight(0xffffff,.28));const key=new THREE.DirectionalLight(0xe3f3ff,3.1);key.position.set(-3,5,6);scene.add(key);const fill=new THREE.PointLight(0x89b5e3,50,18);fill.position.set(3,-1,4);scene.add(fill);
+        let mx=0,my=0,visible=true;document.addEventListener('pointermove',e=>{mx=(e.clientX/window.innerWidth-.5)*.3;my=(e.clientY/window.innerHeight-.5)*.18;},{passive:true});document.addEventListener('visibilitychange',()=>{visible=!document.hidden;});
+        function size(){const w=parent.clientWidth,h=parent.clientHeight;if(w===0||h===0)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();group.scale.setScalar(window.innerWidth<700?.83:1);}
+        size();window.addEventListener('resize',size,{passive:true});
+        const clock=new THREE.Clock();function animate(){requestAnimationFrame(animate);if(!visible)return;const t=clock.getElapsedTime();group.rotation.y+=(mx-group.rotation.y)*.015;group.rotation.x+=(my-group.rotation.x)*.015;sculpture.rotation.y=t*.11;sculpture.rotation.x=t*.085;sculpture.rotation.z=.21*Math.sin(t*.23);group.position.y=.17*Math.sin(t*.65);accent.rotation.z=.55+t*.055;accent2.rotation.y=1.05+t*.04;renderer.render(scene,camera);}animate();
+        document.getElementById('sculpture-fallback').style.opacity='0';document.getElementById('orb-ring').style.opacity='0';
+      }catch(err){console.warn('3D animation unavailable; showing decorative fallback.',err);}
+    }
+  </script>
 </body>
 </html>
